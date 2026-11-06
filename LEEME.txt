@@ -1,0 +1,32 @@
+IBIZA YOGA POINT - Web lista para Vercel
+=========================================
+
+Estructura:
+  index.html            -> página principal (HTML). Vercel la abre automáticamente
+  css/estilos.css       -> todos los estilos (colores, tipografías, diseño)
+  js/horario.js         -> el calendario/horario de clases
+  js/pagina.js          -> navegación de las páginas legales (aviso, privacidad, cookies)
+  img/                  -> fotos (foto-01.jpg ... foto-12.jpg)
+  video/                -> comunidad.mp4, yoga-lovers.mp4, india.mp4
+  fonts/                -> Abril Fatface, Josefin Sans, EB Garamond
+  favicon.svg           -> icono de la pestaña
+  vercel.json           -> configuración de Vercel
+  robots.txt            -> permite que Google indexe la web
+
+IMPORTANTE
+  - No cambies nombres ni muevas archivos de carpeta: la web los busca ahí.
+  - Vercel distingue mayúsculas y minúsculas: todos los nombres están en minúsculas.
+  - index.html debe quedar en la RAÍZ del proyecto, no dentro de otra carpeta.
+
+Cómo subirla
+  A) GitHub: sube el CONTENIDO de esta carpeta a la raíz del repositorio
+     e impórtalo en vercel.com/new
+       Framework Preset: Other
+       Build Command: (vacío)
+       Output Directory: (vacío)
+       Root Directory: (vacío, o ./)
+  B) Terminal: entra en esta carpeta y ejecuta:  vercel --prod
+
+Mantenimiento
+  - Horario: en js/horario.js busca "CONFIRMADO" y cambia el mes (enero = 0).
+  - Teléfono de WhatsApp del horario: en js/horario.js, variable TELEFONO.
